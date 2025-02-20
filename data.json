@@ -9039,7 +9039,7 @@
                 0
             ]
         ],
-        "concetp": "remove_below_horizontal_line"
+        "concept": "remove_below_horizontal_line"
     },
     {
         "input_grid": [
@@ -9326,7 +9326,7 @@
                 0
             ]
         ],
-        "concetp": "remove_below_horizontal_line"
+        "concept": "remove_below_horizontal_line"
     },
     {
         "input_grid": [
@@ -9613,7 +9613,7 @@
                 0
             ]
         ],
-        "concetp": "remove_below_horizontal_line"
+        "concept": "remove_below_horizontal_line"
     },
     {
         "input_grid": [
@@ -9900,6 +9900,6 @@
                 0
             ]
         ],
-        "concetp": "remove_below_horizontal_line"
+        "concept": "remove_below_horizontal_line"
     }
 ]
