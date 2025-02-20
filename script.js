@@ -1,8 +1,10 @@
-// Load JSON data and display all problems
 fetch("data.json")
     .then(response => response.json())
     .then(data => {
-        console.log("Loaded JSON Data:", data); // Debugging Log
+        if (!Array.isArray(data) || data.length === 0) {
+            console.error("No valid data found in JSON!");
+            return;
+        }
         displayAllProblems(data);
     })
     .catch(error => console.error("Error loading JSON:", error));
@@ -29,7 +31,7 @@ function displayAllProblems(problems) {
         // Input Grid
         const inputWrapper = document.createElement("div");
         inputWrapper.classList.add("grid-wrapper");
-        inputWrapper.innerHTML = "<h3>Input Grid</h3>";
+        inputWrapper.innerHTML = "<div class='grid-title'>Input Grid</div>";
         const inputGrid = document.createElement("div");
         inputGrid.classList.add("grid");
         inputWrapper.appendChild(inputGrid);
@@ -38,7 +40,7 @@ function displayAllProblems(problems) {
         // Output Grid
         const outputWrapper = document.createElement("div");
         outputWrapper.classList.add("grid-wrapper");
-        outputWrapper.innerHTML = "<h3>Output Grid</h3>";
+        outputWrapper.innerHTML = "<div class='grid-title'>Output Grid</div>";
         const outputGrid = document.createElement("div");
         outputGrid.classList.add("grid");
         outputWrapper.appendChild(outputGrid);
@@ -47,9 +49,6 @@ function displayAllProblems(problems) {
         // Append both grids to the problem container
         problemDiv.appendChild(gridsDiv);
         container.appendChild(problemDiv);
-
-        // Debugging: Check if grid data exists
-        console.log(`Problem ${index}:`, problem.input_grid, problem.output_grid);
 
         // Draw the grids
         drawGrid(inputGrid, problem.input_grid);
