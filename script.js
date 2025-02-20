@@ -1,14 +1,15 @@
-// Load JSON data
+// Load JSON data and display all problems
 fetch("data.json")
     .then(response => response.json())
     .then(data => {
+        console.log("Loaded JSON Data:", data); // Debugging Log
         displayAllProblems(data);
     })
     .catch(error => console.error("Error loading JSON:", error));
 
 function displayAllProblems(problems) {
     const container = document.getElementById("problemsContainer");
-    container.innerHTML = ""; // Clear any existing content
+    container.innerHTML = ""; // Clear previous content
 
     problems.forEach((problem, index) => {
         // Create a container for each problem set
@@ -47,6 +48,9 @@ function displayAllProblems(problems) {
         problemDiv.appendChild(gridsDiv);
         container.appendChild(problemDiv);
 
+        // Debugging: Check if grid data exists
+        console.log(`Problem ${index}:`, problem.input_grid, problem.output_grid);
+
         // Draw the grids
         drawGrid(inputGrid, problem.input_grid);
         drawGrid(outputGrid, problem.output_grid);
@@ -54,10 +58,16 @@ function displayAllProblems(problems) {
 }
 
 function drawGrid(container, gridData) {
+    if (!gridData || gridData.length === 0) {
+        console.error("Grid data is missing or empty!", gridData);
+        return;
+    }
+
     container.innerHTML = ""; // Clear previous grid
     const rows = gridData.length;
     const cols = gridData[0].length;
 
+    container.style.display = "grid";
     container.style.gridTemplateRows = `repeat(${rows}, 40px)`;
     container.style.gridTemplateColumns = `repeat(${cols}, 40px)`;
 
