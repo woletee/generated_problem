@@ -8,50 +8,68 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #001F3F; /* Dark blue background */
+            color: white;
+            margin: 0;
+            padding: 20px;
         }
+
+        h1 {
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        .problem-container {
+            background: #003366;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            max-width: 80%;
+        }
+
+        .concept-label {
+            font-size: 18px;
+            font-weight: bold;
+            background: #FFA500;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
         .grid-container {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
+            gap: 50px;
+            padding: 10px;
         }
+
+        .grid-wrapper {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
         .grid {
             display: grid;
             gap: 2px;
             border: 2px solid black;
             padding: 5px;
         }
+
         .cell {
             width: 40px;
             height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
             border: 1px solid black;
-        }
-        button {
-            margin: 10px;
-            padding: 10px;
-            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <h1>Grid Visualizer</h1>
-    <p id="concept">Loading...</p>
-    <div class="grid-container">
-        <div>
-            <h3>Input Grid</h3>
-            <div id="inputGrid" class="grid"></div>
-        </div>
-        <div>
-            <h3>Output Grid</h3>
-            <div id="outputGrid" class="grid"></div>
-        </div>
-    </div>
-    <button onclick="prevGrid()">Previous</button>
-    <button onclick="nextGrid()">Next</button>
+    <div id="problemsContainer"></div>
 
     <script src="script.js"></script>
 </body>
