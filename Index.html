@@ -1,1 +1,57 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Visualizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .grid {
+            display: grid;
+            gap: 2px;
+        }
+        .cell {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 1px solid black;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Visualizer</h1>
+    <p id="concept">Loading...</p>
+    <div class="grid-container">
+        <div>
+            <h3>Input Grid</h3>
+            <div id="inputGrid" class="grid"></div>
+        </div>
+        <div>
+            <h3>Output Grid</h3>
+            <div id="outputGrid" class="grid"></div>
+        </div>
+    </div>
+    <button onclick="prevGrid()">Previous</button>
+    <button onclick="nextGrid()">Next</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
