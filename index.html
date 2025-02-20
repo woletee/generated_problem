@@ -53,12 +53,15 @@
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
         }
 
-        .grid {
-            display: grid;
-            gap: 2px;
-            border: 2px solid black;
-            padding: 5px;
-        }
+       .grid {
+    display: grid;
+    gap: 2px;
+    border: 2px solid black;
+    padding: 5px;
+    min-width: 120px;  /* Ensures it's not collapsing */
+    min-height: 120px; /* Ensures it's not collapsing */
+}
+
 
         .cell {
             width: 40px;
