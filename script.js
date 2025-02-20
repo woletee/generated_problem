@@ -1,59 +1,42 @@
-let data = [];
-let currentIndex = 0;
+document.addEventListener("DOMContentLoaded", function () {
+    const fileInput = document.getElementById("fileInput");
 
-// Load JSON data
-fetch("data.json")
-    .then(response => response.json())
-    .then(jsonData => {
-        data = jsonData;
-        showGrid();
-    })
-    .catch(error => console.error("Error loading JSON:", error));
+    fileInput.addEventListener("change", function (event) {
+        const file = event.target.files[0];
+        if (!file) return;
 
-// Function to update grids
-function showGrid() {
-    if (data.length === 0) return;
-    
-    const inputGrid = data[currentIndex].input_grid;
-    const outputGrid = data[currentIndex].output_grid;
-    const concept = data[currentIndex].concept;
-    
-    document.getElementById("concept").innerText = `Concept: ${concept}`;
-    
-    renderGrid(inputGrid, "inputGrid");
-    renderGrid(outputGrid, "outputGrid");
-}
-
-// Function to create grid elements
-function renderGrid(gridData, elementId) {
-    const gridElement = document.getElementById(elementId);
-    gridElement.innerHTML = "";
-    gridElement.style.gridTemplateColumns = `repeat(${gridData[0].length}, 30px)`;
-
-    gridData.forEach(row => {
-        row.forEach(cell => {
-            const cellDiv = document.createElement("div");
-            cellDiv.className = "cell";
-            cellDiv.style.backgroundColor = getColor(cell);
-            cellDiv.innerText = cell;
-            gridElement.appendChild(cellDiv);
-        });
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const jsonData = JSON.parse(e.target.result);
+            displayGrids(jsonData[0]); // Display first item in JSON
+        };
+        reader.readAsText(file);
     });
-}
+});
 
-// Function to cycle grids
-function nextGrid() {
-    currentIndex = (currentIndex + 1) % data.length;
-    showGrid();
-}
-function prevGrid() {
-    currentIndex = (currentIndex - 1 + data.length) % data.length;
-    showGrid();
-}
+function drawGrid(canvasId, gridData) {
+    const canvas = document.getElementById(canvasId);
+    const ctx = canvas.getContext("2d");
 
-// Function to map numbers to colors
-function getColor(num) {
+    const gridSize = gridData.length;
+    const cellSize = 40; // Cell size in pixels
+
+    canvas.width = gridData[0].length * cellSize;
+    canvas.height = gridData.length * cellSize;
+
     const colors = ["#000000", "#0074D9", "#FF4136", "#2ECC40", "#FFDC00",
                     "#AAAAAA", "#F012BE", "#FF851B", "#7FDBFF", "#870C25"];
-    return colors[num] || "#FFFFFF";
+
+    for (let row = 0; row < gridSize; row++) {
+        for (let col = 0; col < gridData[row].length; col++) {
+            ctx.fillStyle = colors[gridData[row][col] % colors.length];
+            ctx.fillRect(col * cellSize, row * cellSize, cellSize, cellSize);
+            ctx.strokeRect(col * cellSize, row * cellSize, cellSize, cellSize);
+        }
+    }
+}
+
+function displayGrids(task) {
+    drawGrid("inputCanvas", task.input_grid);
+    drawGrid("outputCanvas", task.output_grid);
 }
