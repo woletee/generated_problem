@@ -11,7 +11,7 @@ fetch("data.json")
 
 function displayAllProblems(problems) {
     const container = document.getElementById("problemsContainer");
-    container.innerHTML = ""; // Clear previous content
+    container.innerHTML = ""; 
 
     problems.forEach((problem, index) => {
         // Create a container for each problem set
