@@ -2,92 +2,92 @@
     "categories": [
         {
             "name": "alignment_transformation",
-            "file": "alignment_transformation.json"
+            "file": "categories/alignment_transformation.json"
         },
         {
             "name": "color_top_part",
-            "file": "color_top_part.json"
+            "file": "categories/color_top_part.json"
         },
         {
             "name": "extract_bottom_object"
-            "file": "extract_bottom_object.json"
+            "file": "categories/extract_bottom_object.json"
         },
         {
             "name": "extract_colors",
-            "file": "extract_colors.json"
+            "file": "categories/extract_colors.json"
         },
           {
             "name": "find_center",
-            "file": "find_center.json"
+            "file": "categories/find_center.json"
         },
           {
             "name": "guiding_line_long_objects",
-            "file": "guiding_line_long_objects.json"
+            "file": "categories/guiding_line_long_objects.json"
         },
           {
             "name": "keep_bottom_object",
-            "file": "keep_bottom_object.json"
+            "file": "categories/keep_bottom_object.json"
         },
           {
             "name": "move_clusters_to_right",
-            "file": "move_clusters_to_right.json"
+            "file": "categoriesm/move_clusters_to_right.json"
         },
           {
             "name": "move_object_to_center",
-            "file": "move_object_to_center.json"
+            "file": "categories/move_object_to_center.json"
         },
           {
             "name": "move_object_to_right",
-            "file": "move_object_to_right.json"
+            "file": "categories/move_object_to_right.json"
         },
           {
             "name": "object_color_extraction",
-            "file": "object_color_extraction.json"
+            "file": "categories/object_color_extraction.json"
         },
           {
             "name": "process_least_dominant_pixel",
-            "file": "process_least_dominant_pixel.json"
+            "file": "categories/process_least_dominant_pixel.json"
         },
           {
             "name": "recolor_to_bottom_object",
-            "file": "recolor_to_bottom_object.json"
+            "file": "categories/recolor_to_bottom_object.json"
         },
           {
             "name": "extract_colors",
-            "file": "extract_colors.json"
+            "file": "categories/extract_colors.json"
         },
           {
             "name": "remove_below_horizontal_line",
-            "file": "remove_below_horizontal_line.json"
+            "file": "categories/remove_below_horizontal_line.json"
         },
         ,
           
          {
             "name": " remove_dominant_color",
-            "file": " remove_dominant_color.json"
+            "file": " categories/remove_dominant_color.json"
         },
          {
             "name": " remove_inner_pixel",
-            "file": " remove_inner_pixel.json"
+            "file": " categories/remove_inner_pixel.json"
         },
          {
             "name": "remove_least_dominant_pixel",
-            "file": " remove_least_dominant_pixel.json"
+            "file": " categories/remove_least_dominant_pixel.json"
         },
           
          {
             "name": " remove_top_bottom_objects.json",
-            "file": "remove_top_bottom_objects"
+            "file": "categories/remove_top_bottom_objects"
         },
         
        
          {
             "name": "select_bottom_object.json",
-            "file": " select_bottom_object.json"
+            "file": " categories/select_bottom_object.json"
         },
           {
             "name": "swap_objects",
-            "file": "swap_objects.json"
+            "file": "categories/swap_objects.json"
         }
    
     ]
