@@ -61,10 +61,7 @@
             "file": "remove_below_horizontal_line.json"
         },
         ,
-          {
-            "name": "remove_below_horizontal_line",
-            "file": "remove_below_horizontal_line.json"
-        },
+          
          {
             "name": " remove_dominant_color",
             "file": " remove_dominant_color.json"
@@ -77,19 +74,13 @@
             "name": "remove_least_dominant_pixel",
             "file": " remove_least_dominant_pixel.json"
         },
-           {
-            "name": "remove_least_dominant_pixel",
-            "file": " remove_least_dominant_pixel.json"
-        },
+          
          {
             "name": " remove_top_bottom_objects.json",
             "file": "remove_top_bottom_objects"
         },
         
-          {
-            "name": " remove_top_bottom_objects.json",
-            "file": "remove_top_bottom_objects"
-        },
+       
          {
             "name": "select_bottom_object.json",
             "file": " select_bottom_object.json"
