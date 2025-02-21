@@ -1,0 +1,20 @@
+{
+    "categories": [
+        {
+            "name": "Basic Transformations",
+            "file": "basic_transformations.json"
+        },
+        {
+            "name": "Object Manipulation",
+            "file": "object_manipulation.json"
+        },
+        {
+            "name": "Pattern Recognition",
+            "file": "pattern_recognition.json"
+        },
+        {
+            "name": "Grid Coloring",
+            "file": "grid_coloring.json"
+        }
+    ]
+}
