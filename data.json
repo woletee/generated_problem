@@ -1,11 +1,10 @@
 {
     "categories": [
-       
         {
             "name": "color_top_part",
             "file": "categories/color_top_part.json"
         },
-              {
+        {
             "name": "remove_below_horizontal_line",
             "file": "categories/remove_below_horizontal_line.json"
         },
@@ -65,9 +64,9 @@
             "name": "select_bottom_object",
             "file": "categories/select_bottom_object.json"
         },
-         {
+        {
             "name": "alignment_transformation",
             "file": "categories/alignment_transformation.json"
-        },
+        }
     ]
 }
