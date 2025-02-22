@@ -67,8 +67,8 @@
             "file": "Concepts/select_bottom_object.json"
         },
         {
-            "name": "alignment_transformation",
-            "file": "Concepts/alignment_transformation.json"
+            "name": "Scaling",
+            "file": "Concepts/alignment_transformationn.json"
         },
            {
             "name": "replace_top_objects",
