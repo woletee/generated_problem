@@ -10,7 +10,7 @@
             "file": "Concepts/remove_below_horizontal_line.json"
         },
         {
-            "name": "extract_bottom_object",
+            "name": "extract_top_or_bottom_object",
             "file": "Concepts/extract_bottom_object.json"
         },
         {
