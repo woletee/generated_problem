@@ -56,7 +56,7 @@
        
         {
             "name": "remove_least_dominant_pixel",
-            "file": "categories/remove_least_dominant_pixel.json"
+            "file": "Concepts/remove_least_dominant_pixel.json"
         },
         {
             "name": "remove_top_bottom_objects",
@@ -68,7 +68,7 @@
         },
         {
             "name": "arrange_two_objects",
-            "file": "Concepts/arrange_two_objetcs.json"
+            "file": "Concepts/arrange_two_objects.json"
         },
            {
             "name": "Swap_objets",
