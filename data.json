@@ -67,13 +67,10 @@
             "file": "Concepts/select_bottom_object.json"
         },
         {
-            "name": "Scaling",
+            "name": "arrange_two_objects",
             "file": "Concepts/arrange_two_objetcs.json"
         },
            {
-            "name": "replace_top_objects",
-            "file": "Concepts/replace_top_objects.json"
-        },  {
             "name": "Swap_objets",
             "file": "Concepts/swap_objects.json"
         }
