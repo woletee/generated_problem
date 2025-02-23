@@ -56,6 +56,10 @@
             "name": "remove_least_dominant_pixel",
             "file": "Concepts/remove_least_dominant_pixel.json"
         },
+         {
+            "name": "Place_pixel_at_center",
+            "file": "Concepts/Place_pixel_at_center.json"
+        },
         {
             "name": "remove_top_bottom_objects",
             "file": "Concepts/remove_top_bottom_objects.json"
