@@ -1,17 +1,16 @@
 {
     "categories": [
-         {
+        {
             "name": "remove_inner_pixel",
             "file": "Concepts/remove_inner_pixel.json"
         },
-        
         {
             "name": "remove_below_horizontal_line",
             "file": "Concepts/remove_below_horizontal_line.json"
         },
         {
             "name": "extract_top_or_bottom_object",
-            "file": "Concepts/extract_bottom_objectt.json"
+            "file": "Concepts/extract_bottom_object.json"
         },
         {
             "name": "extract_colors",
@@ -47,13 +46,12 @@
         },
         {
             "name": "recolor_to_bottom_object",
-            "file": "categories/recolor_to_bottom_object.json"
+            "file": "Concepts/recolor_to_bottom_object.json"
         },
         {
             "name": "remove_dominant_color",
-            "file": "categories/remove_dominant_color.json"
+            "file": "Concepts/remove_dominant_color.json"
         },
-       
         {
             "name": "remove_least_dominant_pixel",
             "file": "Concepts/remove_least_dominant_pixel.json"
@@ -70,14 +68,13 @@
             "name": "arrange_two_objects",
             "file": "Concepts/arrange_two_objects.json"
         },
-           {
-            "name": "Swap_objets",
+        {
+            "name": "swap_objects",
             "file": "Concepts/swap_objects.json"
         },
         {
             "name": "drawing_guiding_line",
             "file": "Concepts/drawing_guiding_line.json"
         }
-       
     ]
 }
