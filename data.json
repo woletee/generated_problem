@@ -1,5 +1,5 @@
 {
-    "Concepts": [
+    "categories": [
          {
             "name": "remove_inner_pixel",
             "file": "Concepts/remove_inner_pixel.json"
