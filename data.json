@@ -29,10 +29,6 @@
             "file": "Concepts/keep_bottom_object.json"
         },
         {
-            "name": "move_object_to_right",
-            "file": "Concepts/move_object_to_right.json"
-        },
-        {
             "name": "object_color_extraction",
             "file": "Concepts/object_color_extraction.json"
         },
