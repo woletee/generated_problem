@@ -65,10 +65,6 @@
             "file": "Concepts/select_bottom_object.json"
         },
         {
-            "name": "arrange_two_objects",
-            "file": "Concepts/arrange_two_objects.json"
-        },
-        {
             "name": "swap_objects",
             "file": "Concepts/swap_objects.json"
         },
