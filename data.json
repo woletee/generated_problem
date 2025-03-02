@@ -61,7 +61,7 @@
             "file": "Concepts/remove_top_bottom_objects.json"
         },
         {
-            "name": "select_bottom_object",
+            "name": "above_below",
             "file": "Concepts/above_below.json"
         },
         {
