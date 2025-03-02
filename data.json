@@ -62,7 +62,7 @@
         },
         {
             "name": "select_bottom_object",
-            "file": "Concepts/select_bottom_object.json"
+            "file": "Concepts/above_below.json"
         },
         {
             "name": "swap_objects",
